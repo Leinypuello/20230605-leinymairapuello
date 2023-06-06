@@ -1,0 +1,291 @@
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello
+$ git init
+Initialized empty Git repository in C:/Users/Administrador/Desktop/20230605-leinymairapuello/.git/
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (master)
+$ echo "# 20230605-leinymairapuello" >> README.md
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (master)
+$ git branch -M main
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
+$
+git remote add origin https://github.com/Leinypuello/20230605-leinymairapuello.git
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
+$ git remote -v
+origin  https://github.com/Leinypuello/20230605-leinymairapuello.git (fetch)
+origin  https://github.com/Leinypuello/20230605-leinymairapuello.git (push)
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
+$ touch comandos.txt main.js index.html
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
+$ git add .
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+        new file:   comandos.txt
+        new file:   index.html
+        new file:   main.js
+
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
+$ git commit -m "commit 01 de leinymairapuello"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Administrador@DESKTOP-M52R1PT.(none)')
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
+$ git config --global user.name "Leinypuello"
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
+$ git commit -m "commit 01 de leinymairapuello"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Administrador@DESKTOP-M52R1PT.(none)')
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
+$  git config --global user.email "leinypuello84@gmail.com"
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Leinypuello
+user.email=leinypuello84@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/Leinypuello/20230605-leinymairapuello.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
+$ git commit -m "commit 01 de leinymairapuello"
+[main (root-commit) be150a2] commit 01 de leinymairapuello
+ 4 files changed, 1 insertion(+)
+ create mode 100644 README.md
+ create mode 100644 comandos.txt
+ create mode 100644 index.html
+ create mode 100644 main.js
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
+$ git push origin main
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 317 bytes | 317.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Leinypuello/20230605-leinymairapuello.git
+ * [new branch]      main -> main
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
+$ git log
+commit be150a2e59bd4f4e5543f5638d9eb3f752b57081 (HEAD -> main, origin/main)
+Author: Leinypuello <leinypuello84@gmail.com>
+Date:   Tue Jun 6 03:50:54 2023 -0500
+
+    commit 01 de leinymairapuello
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
+$ git branch feature
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
+$ git checkout feature
+Switched to branch 'feature'
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (feature)
+$ mkdir Hardware Software SeguridadInformatica
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (feature)
+$ cd Hardware/
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello/Hardware (feature)
+$ touch resument.txt
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello/Hardware (feature)
+$ cd ../Software/
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello/Software (feature)
+$ touch resument.txt
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello/Software (feature)
+$ cd ../SeguridadInformatica/
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello/SeguridadInformatica (feature)
+$ touch resument.txt
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello/SeguridadInformatica (feature)
+$ git status
+On branch feature
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../Hardware/
+        ./
+        ../Software/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello/SeguridadInformatica (feature)
+$ cd ..
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (feature)
+$ git status
+On branch feature
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hardware/
+        SeguridadInformatica/
+        Software/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (feature)
+$ ls -t
+SeguridadInformatica/  Software/  Hardware/  index.html  main.js  comandos.txt  README.md
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (feature)
+$ git add .
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (feature)
+$ git commit -m "commit 02 de leinymairapuello"
+[feature 54d3787] commit 02 de leinymairapuello
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resument.txt
+ create mode 100644 SeguridadInformatica/resument.txt
+ create mode 100644 Software/resument.txt
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (feature)
+$ git status
+On branch feature
+nothing to commit, working tree clean
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (feature)
+$ git push origin feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 416 bytes | 416.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/Leinypuello/20230605-leinymairapuello/pull/new/feature
+remote:
+To https://github.com/Leinypuello/20230605-leinymairapuello.git
+ * [new branch]      feature -> feature
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (feature)
+$ git log
+commit 54d37875669ddc434362320439181ba9250d034a (HEAD -> feature, origin/feature)
+Author: Leinypuello <leinypuello84@gmail.com>
+Date:   Tue Jun 6 03:59:07 2023 -0500
+
+    commit 02 de leinymairapuello
+
+commit be150a2e59bd4f4e5543f5638d9eb3f752b57081 (origin/main, main)
+Author: Leinypuello <leinypuello84@gmail.com>
+Date:   Tue Jun 6 03:50:54 2023 -0500
+
+    commit 01 de leinymairapuello
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (feature)
+$ git log -outline
+fatal: unrecognized argument: -outline
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (feature)
+$ git log -t
+commit 54d37875669ddc434362320439181ba9250d034a (HEAD -> feature, origin/feature)
+Author: Leinypuello <leinypuello84@gmail.com>
+Date:   Tue Jun 6 03:59:07 2023 -0500
+
+    commit 02 de leinymairapuello
+
+commit be150a2e59bd4f4e5543f5638d9eb3f752b57081 (origin/main, main)
+Author: Leinypuello <leinypuello84@gmail.com>
+Date:   Tue Jun 6 03:50:54 2023 -0500
+
+    commit 01 de leinymairapuello
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (feature)
+$ git checkout main
+Switched to branch 'main'
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
+$ mv main.js resumenHardware.txt
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
+$ mv index.html resumenSoftware.txt
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
+$ git add .
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
+$ git commit -m "commit 03 de leinymairapuello"
+[main 2980cde] commit 03 de leinymairapuello
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ rename index.html => resumenHardware.txt (100%)
+ rename main.js => resumenSoftware.txt (100%)
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 303 bytes | 303.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Leinypuello/20230605-leinymairapuello.git
+   be150a2..2980cde  main -> main
+
+Administrador@DESKTOP-M52R1PT MINGW64 ~/Desktop/20230605-leinymairapuello (main)
